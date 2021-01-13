@@ -20,14 +20,14 @@ export default class YouTubeDebugger extends Component{
   
   handleBit = () => {
     this.setState( bit =>
-    ({timesClicked:prev.timesClicked+1})
+    ({settings.bitrate:12})
   )}
   
   
   handleRes = () => {
-    
-    
-  }
+    this.setState( res =>
+    ({settings.bitrate:12})
+  )}
   
   render(){
     return (

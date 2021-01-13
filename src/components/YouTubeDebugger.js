@@ -26,7 +26,7 @@ export default class YouTubeDebugger extends Component{
   
   handleRes = () => {
     this.setState( res =>
-    ({settings.bitrate:12})
+    ({settings.video.resolution:'720p'})
   )}
   
   render(){

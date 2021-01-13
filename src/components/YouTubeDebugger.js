@@ -26,6 +26,9 @@ export default class YouTubeDebugger extends Component{
   render(){
     return (
       <button className="bitrate" onClick={this.handleUtube}>{this.state.timesClicked}</button>
+      
+      
+     <button className="bitrate" onClick={this.handleUtube}>{this.state.timesClicked}</button>
       )
   }
 }

@@ -19,8 +19,9 @@ export default class YouTubeDebugger extends Component{
   }
   
   handleBit = () => {
-    this.setState( bit =>
-    ({settings.bitrate:12})
+    this.setState( settings:{
+      
+    }
   )}
   
   

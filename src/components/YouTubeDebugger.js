@@ -31,6 +31,7 @@ export default class YouTubeDebugger extends Component{
   handleRes = () => {
     this.setState({
        settings:{
+         ...this.state.settings,
          video:{
            
          }

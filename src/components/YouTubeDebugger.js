@@ -10,25 +10,31 @@ export default class YouTubeDebugger extends Component{
         errors: [],
         user: null,
         settings: {
-        bitrate: 8,
-        video: {
-            resolution: '1080p'
-            }
-        }
+             bitrate: 8,
+             video: {
+                resolution: '1080p'
+              }
+           }
      }
   }
   
-  handleUtube=()=> {
-    this.setState( prev =>
+  handleBit = () => {
+    this.setState( bit =>
     ({timesClicked:prev.timesClicked+1})
   )}
   
+  
+  handleRes = () => {
+    
+    
+  }
+  
   render(){
     return (
-      <button className="bitrate" onClick={this.handleUtube}>{this.state.timesClicked}</button>
+      <button className="bitrate" onClick={this.handleBit}>Bitrate</button>
       
       
-     <button className="bitrate" onClick={this.handleUtube}>{this.state.timesClicked}</button>
+     <button className="resolution" onClick={this.handleRes}>Resolution</button>
       )
   }
 }
